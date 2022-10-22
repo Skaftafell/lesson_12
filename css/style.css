@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+@font-face {
+   font-family: "ArthurHill";
+   src: url("../fonts/ArthurHillRegular.woff2") format("woff2"),
+     url("../fonts/ArthurHillRegular.woff") format("woff");
+   font-display: swap;
+   font-weight: 400;
+   font-style: normal;
+ }
+
+body {
+   font-family:"Roboto", sans-serif ;
+}
+
+.container {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding: 0 15px;
+   background-color: #ededed;
+}
+.tr__title,
+.sc__title,
+.rt__title,
+.sw__title,
+.mp__title,
+.to__title,
+.po__title,
+.sctd__title,
+.mtd__title,
+.bk__title{
+   font-size: 45px;
+   text-align: center;
+   margin-bottom: 30px;
+   text-transform: capitalize;
+}
+
+.tr,
+.sc,
+.rt,
+.sw,
+.mp,
+.to,
+.po,
+.sctd,
+.mtd,
+.bk,
+.w3c{
+   max-width: 800px;
+   min-height: 350px;
+   margin: 0 auto;
+}
+
+/* ===INFO=== */
+.main__title {
+   font-family: "ArthurHill", sans-serif;
+   text-transform: uppercase;
+   font-size: 60px;
+   text-align: center;
+   margin-bottom: 25px;
+   color: #d305b7;
+}
+.main__text {
+   font-family: "ArthurHill", sans-serif;
+   text-transform: capitalize;
+   font-size: 45px;
+   text-align: center;
+   padding-bottom: 20px;
+}
+/* ===/INFO=== */
+/* ===TRANSLATE=== */
+.tr{
+   background: linear-gradient(to top right, #F0EC05 24%, #CCC121 92%);
+}
+.tr__object{
+   width: 150px;
+   height: 150px;
+   margin: 0 auto;
+   background-color:#0557f0;
+   transition: all .3s ease;
+}
+
+.tr__object:hover {
+   transform: translate(25px,25px);
+   background-color:#f005a6;
+   border-radius: 50%;
+}
+/* ===/TRANSLATE=== */
+/* ===SCALE=== */
+.sc {
+   background: linear-gradient(to top right, #055bf0 24%, #7aadf1 92%);
+}
+.sc__object{
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   background-color:#20f005;
+   transition: all .3s ease;
+}
+
+.sc__object:hover {
+   transform: scale(0.6);
+   background-color:#f09a05;
+}
+/* ===/SCALE=== */
+/* ===ROTATE=== */
+.rt{
+   background: linear-gradient(to top right, #04850a 24%, #2cef36 92%);
+}
+
+.rt__object {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   background-color:#cf02de;
+   transition: all 1.5s ease;
+}
+
+.rt__object:hover {
+   transform: rotate(225deg);
+   background-color:#713284;
+}
+/* ===/ROTATE=== */
+/* ===SCEW=== */
+.sw {
+   background: linear-gradient(to top right, #d1f004 24%, #728103 92%);
+}
+.sw__object {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   background-color:#0818a4;
+   transition: all 0.3s ease;
+}
+
+.sw__object:hover {
+   transform: skew(15deg);
+   background-color:#5565f2;
+}
+/* ===/SCEW=== */
+/* === MULTIPLE 2D TRANSFORMATION ===*/
+.mp {
+   background: linear-gradient(to top right, #04f0d8 24%, #106d74 92%);
+}
+
+.mp__object {
+   width: 250px;
+   height: 250px;
+   margin: 0 auto;
+   background-color:#e4eb21;
+   transition: all 3s ease;
+}
+
+.mp__object:hover {
+   transform: translate(15px, 15px) rotate(225deg) scale(0.5);
+   background-color:#0369c3;
+}
+/* ===/MULTIPLE 2D TRANSFORMATION===*/
+/* === TRANSFORM ORIGIN === */
+.to {
+   background: linear-gradient(to top right, #f0a504 24%, #edd05c 92%);
+   min-height: 400px;
+}
+.to__text {
+   font-size: 25px;
+   margin: 30px;
+}
+
+.to__object {
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+   background-color:#bf05c3;
+   transition: all 1.5s ease;
+}
+
+.to__object:hover {
+   transform-origin:bottom right;
+   transform: rotate(305deg);
+}
+/* ===/TRANSFORM ORIGIN === */
+/* ===PERSPECTIVE ORIGIN === */
+.po {
+   background: linear-gradient(to top right, #04850a 24%, #2cef36 92%);
+   min-height: 500px;
+}
+
+.po__text {
+   font-size: 25px;
+   margin: 30px;
+}
+
+.po__object {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   transition: all 1.5s ease;
+}
+
+.po__object:hover {
+   perspective: 400px;
+   perspective-origin: center;
+   transform: rotateX(45deg);
+}
+/* ===/PERSPECTIVE ORIGIN === */
+/* ===SCALE 3D=== */
+.sctd {
+   background: linear-gradient(to top right, #055bf0 24%, #7aadf1 92%);
+   min-height: 600px;
+}
+
+.sctd__text {
+   font-size: 25px;
+   margin: 70px;
+}
+
+.sctd__object {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   transition: all 1.5s ease;
+}
+
+.sctd__object:hover {
+   transform: scale3d(1.5, 1.5, 1.5);
+}
+/* ===/SCALE 3D=== */
+/* ===MATRIX 3d ===*/
+.mtd {
+   background: linear-gradient(to top right, #04f0d8 24%, #106d74 92%);
+   min-height: 600px;
+}
+
+.mtd__text {
+   font-size: 25px;
+   margin: 70px;
+}
+
+.mtd__object {
+   width: 200px;
+   height: 200px;
+   margin: 0 auto;
+   transform-origin: center top 0px; 
+   transition: all 1.5s cubic-bezier(0.550,0.085,0.680,0.530) 0s;
+}
+
+.mtd__object:hover {
+   transform: matrix3d(1.42,-0.71,0.00,0,0.71,1.42,0.00,0,0,0,1,0,30,0,0,1);
+}
+/* ===/MATRIX 3d ===*/
+/* ===BOOKLET ===*/
+
+.bk {
+   background: linear-gradient(to top right, #b1b703 24%, #edf671 92%);
+   min-height: 500px;
+}
+.book {
+   width: 250px;
+   height: 350px;
+   background: #4d7bfa;
+   padding-left: 40px;
+   position: relative;
+   left: 50%;
+   top: 50%;
+   transform: translateX(-50%);
+   perspective: 1000px;
+}
+
+.book__cover {
+   width: 210px;
+   height: 100%;
+   position: absolute;
+   left: 40px;
+   background-color: rgba(243, 164, 37);
+   transform: rotateY(0deg);
+   transform-style: preserve-3d;
+   transform-origin: left;
+   transition: all 1s ease-in;
+}
+
+.book__cover:hover {
+   transform: rotateY(-180deg);
+}
+
+figure {
+   margin: 0;
+   display: block;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+}
+
+figure.front {
+   background: url(../image/yaroslav_mudry.webp);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+figure.back {
+   transform: rotateY(180deg);
+}
+
+.book__text {
+   padding: 10px;
+   font-size: 20px;
+   color: wheat;
+}
+/* ===/BOOKLET ===*/
